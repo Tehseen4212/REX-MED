@@ -1,0 +1,37 @@
+name: rex_controller
+description: "Universal Bluetooth Manager - Classic + BLE"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bluetooth_serial:
+    git:
+      url: https://github.com/edufolly/flutter_bluetooth_serial.git
+  flutter_blue_plus: ^1.32.5
+  permission_handler: ^11.0.1
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1   # ✅ added for icon generation
+
+flutter:
+  uses-material-design: true
+
+  # ✅ make sure your icon image is placed in this path
+  assets:
+    - assets/icon/app_icon.png
+
+# ✅ App Icon Configuration (for flutter_launcher_icons)
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
